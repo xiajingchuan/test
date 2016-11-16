@@ -3,6 +3,10 @@
     padding:0;
     list-style-type:none;
     text-decoration:none;
+    font-size:13px;
+}
+a{
+    color:#555;
 }
 .clear{
     clear:both;
@@ -42,22 +46,31 @@ footer{
 }
 #list {
     float:left;
-    width:60%;
+    width:880px;
     border:1px solid #eee;
 }
-#list ul{
-    width:100%;
+#list dl{
     height:30px;
+    line-height: 30px;
 }
-#list ul li{
+#list dl dt,dd{
     float:left;
     text-align: center;
 }
-#list ul li:first-child{
-    width:100px;
+#list dl dt{
+    width:80px;
 }
+#list dl dd{
+    width:114px;
+}
+
 #aside{
     float:right;
-    width:35%;
+    width:300px;
     border:1px solid #eee;
+}
+#aside ul li{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
 }
