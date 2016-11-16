@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <div id='hot'>
+            <?php 
+            foreach($hot as $v) {
+            echo $v->site_name;
+            }
+            ?>
+        </div>
+        <div id='list'>
+        <?php foreach ($list as $val) { ?>
+            <ul>
+                <li><a><?=$val['category_name'] ?></a></li>
+                <?php foreach ($val['list'] as $list) { ?>
+                <li><a><?=$list->site_name;?></a></li>
+                <?php } ?>
+            </ul>
+        <?php } ?>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</div>
