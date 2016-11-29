@@ -66,7 +66,37 @@ class Merchant_model extends CI_Model {
      * 更新商家
      */
     public function update_merchant() {
-
+        $tmp = $this->input->post();
+        $sql = "
+            update merchant set
+            site_name=?,
+            category_id=?,
+            site_url=?,
+            tuiguang_url=?,
+            logo_url=?,
+            short_desc=?,
+            status=?,
+            weight=?,
+            remarks=?,
+            hot=?,
+            create_time=?
+            where site_id=?
+        ";
+        $data = array(
+            'site_name' => $tmp['site_name'],
+            'category_id' => $tmp['site_id'],
+            'site_url' => $tmp['site_url'],
+            'tuiguang_url' => $tmp['site_id'],
+            'logo_url' => $tmp['logo_url'],
+            'short_desc' => $tmp['short_desc'],
+            'status' => $tmp['status'],
+            'weight' => $tmp['weight'],
+            'remarks' => $tmp['remarks'],
+            'hot' => $tmp['site_id'],
+            'create_time' => date('Y-m-d'),
+            'site_id' => $tmp['site_id'],
+        );
+        return $this->db->query($sql,$data);
     }
 
 }

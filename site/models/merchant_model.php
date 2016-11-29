@@ -2,7 +2,7 @@
 /**
  * 商家操作模型
  */
-class Merchant extends CI_Model {
+class Merchant_model extends CI_Model {
 
     public function __construct()
     {
@@ -15,7 +15,7 @@ class Merchant extends CI_Model {
     public function getHotMerchant() {
         //$query = $this->db->get('merchant', 10);
         //$query = $this->db->get_where('merchant',array('hot'=>'Y'), 10);
-        $query = $this->db->select('site_name')
+        $query = $this->db->select('site_url,site_name,logo_url,tuiguang_url')
                  ->from('merchant')
                  ->where('hot','Y')
                  ->where('status','Y')
@@ -45,7 +45,7 @@ class Merchant extends CI_Model {
         if ($limit != 'ALL') {
             $num = $limit;
         }
-        $query = $this->db->select('site_name')
+        $query = $this->db->select('site_name,site_url,tuiguang_url')
                  ->from('merchant')
                  ->where('category_id',$category)
                  ->where('status','Y')

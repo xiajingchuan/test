@@ -55,6 +55,13 @@ class Merchant extends CI_Controller {
      * 编辑商家处理方法
      */
     public function edit_action() {
-        
+        $this->load->model('merchant_model');
+        $bool = $this->merchant_model->update_merchant();
+
+        if ($bool) {
+            echo '更新成功';
+        } else {
+            echo '更新失败';
+        }
     }
 }

@@ -1,24 +1,49 @@
-<div>
-    <div>
-        <div id='hot'>
-            <?php 
-            foreach($hot as $v) {
-            echo $v->site_name;
-            }
-            ?>
-        </div>
-        <div id='list'>
-        <?php foreach ($list as $val) { ?>
-            <ul>
-                <li><a><?=$val['category_name'] ?></a></li>
-                <?php foreach ($val['list'] as $list) { ?>
-                <li><a><?=$list->site_name;?></a></li>
-                <?php } ?>
-            </ul>
-        <?php } ?>
-        </div>
-    </div>
-    <div>
 
+    <div class="layout" id="main">
+        <div id="hot">
+        <ul>
+            <?php foreach($hot as $k=>$v): ?>
+            <li>
+                <a href="<?=$v->site_url;?>">
+                    <img src="static/image/m/<?=$v->logo_url;?>">
+                </a>
+            </li>
+            <?php endforeach;?>
+            
+                <div class="clear"></div>
+        </ul>
+        </div>
+            <!--列表区域-->
+            <div id="list">
+                <?php foreach($list as $v): ?>
+                <dl>
+                    <dt><a href="<?=$v['category_id'];?>"><?=$v['category_name'];?></a></dt>
+                    <?php foreach($v['list'] as $l): ?>
+                    <dd><a href="<?=$l->site_url;?>"><?=$l->site_name;?></a></dd>
+                    <?php endforeach; ?>
+                </dl>
+            <?php endforeach; ?>
+                
+            </div>
+            <!--列表区域end-->
+            <!--侧边栏-->
+            <aside id="aside">
+                <!--促销信息-->
+                <h4>促销信息</h4>
+
+                <ul style="display: block;">
+                    <?php foreach($new_activity as $a) : ?>
+                    <li class="xian1">
+                        <a href="<?=$a->id;?>">
+                        <?=$a->title;?>
+                        </a>
+                    </li>
+                    <?php endforeach;?>
+                    
+                </ul>
+
+                <!--促销信息end-->
+            </aside>
+            <!--侧边栏end-->
+            <div class="clear"></div>
     </div>
-</div>
