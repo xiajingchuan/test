@@ -17,7 +17,7 @@
             <div id="list">
                 <?php foreach($list as $v): ?>
                 <dl>
-                    <dt><a href="<?=$v['category_id'];?>"><?=$v['category_name'];?></a></dt>
+                    <dt><a href="<?=site_url('merchant/show/'.$v['category_id']);?>"><?=$v['category_name'];?></a></dt>
                     <?php foreach($v['list'] as $l): ?>
                     <dd><a href="<?=$l->site_url;?>"><?=$l->site_name;?></a></dd>
                     <?php endforeach; ?>

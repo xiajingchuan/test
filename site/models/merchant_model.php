@@ -13,14 +13,13 @@ class Merchant_model extends CI_Model {
      * 获取热门商家
      */
     public function getHotMerchant() {
-        //$query = $this->db->get('merchant', 10);
-        //$query = $this->db->get_where('merchant',array('hot'=>'Y'), 10);
+
         $query = $this->db->select('site_url,site_name,logo_url,tuiguang_url')
                  ->from('merchant')
                  ->where('hot','Y')
                  ->where('status','Y')
                  ->order_by('weight')
-                 ->limit(10)
+                 ->limit(27)
                  ->get();
         return $query->result();
     }
@@ -45,7 +44,7 @@ class Merchant_model extends CI_Model {
         if ($limit != 'ALL') {
             $num = $limit;
         }
-        $query = $this->db->select('site_name,site_url,tuiguang_url')
+        $query = $this->db->select('site_name,site_url,tuiguang_url,logo_url,short_desc')
                  ->from('merchant')
                  ->where('category_id',$category)
                  ->where('status','Y')

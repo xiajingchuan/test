@@ -9,18 +9,19 @@ class Merchant extends CI_Controller {
     /**
      * 商家列表
      */
-    public function index()
+    public function show($cid=1)
     {
-        $this->load->view('common/header.html');
-        $this->load->view('home/index.html');
-        $this->load->view('common/footer.html');
-    }
+        $this->load->model('merchant_model');
+        $list = $this->merchant_model->getMerchantByCategory($cid);
+        $datas['merchant_list'] = $list;
 
-    /**
-     * 商家详细
-     */
-    public function info() {
-        
+        $this->load->model('category_model');
+        $cate = $this->category_model->getCategoryById($cid);
+        $datas['category_name'] = $cate[0]->name;
+
+        $this->load->view('common/header.html');
+        $this->load->view('merchant/list.html', $datas);
+        $this->load->view('common/footer.html');
     }
 
 }

@@ -1,53 +1,14 @@
-
-    <div class="layout" id="main">
+<div class="layout" id="main">
     <div id="content">
-        <h4>综合商城</h4>
+        <h4><?=$category_name;?></h4>
+        <?php foreach($merchant_list as $v): ?>
         <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
+            <a href="<?=$v->site_url;?>" ><img src="<?=site_url();?>static/image/m/<?=$v->logo_url;?>" alt=""></a>
+            <a class="name" href="<?=$v->site_url;?>"><?=$v->site_name;?></a>
+            <div><?=$v->short_desc;?></div>
         </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-        <div class="item">
-            <a href="#" ><img src="../static/image/m/360buy.gif" alt=""></a>
-            <a class="name" href="#">京东</a>
-            <div>hehehehehehehhehaha哈哈分收费但是</div>
-        </div>
-
+        <?php endforeach; ?>
+        
         <div class="clear"></div>
         </div>
     </div>
