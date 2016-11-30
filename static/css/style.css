@@ -3,7 +3,8 @@
     padding:0;
     list-style-type:none;
     text-decoration:none;
-    font-size:13px;
+    font-size:14px;
+    font-family: 'microsoft yahei';
 }
 a{
     color:#555;
