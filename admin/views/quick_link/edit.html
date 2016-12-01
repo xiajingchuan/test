@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quick link add</title>
+</head>
+<body>
+<h3>添加快速链接</h3>
+<form action="<?=site_url('quick_link/add_action');?>" method="post">
+<table>
+    <tr>
+        <td>链接名称</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>链接地址</td>
+        <td><input type="text" name="url"></td>
+    </tr>
+    <tr>
+        <td>推广网址</td>
+        <td><input type="text" name="tuiguang_url"></td>
+    </tr>
+    <tr>
+        <td>图片地址</td>
+        <td><input type="text" name="image"></td>
+    </tr>
+    <tr>
+        <td>权重</td>
+        <td><input type="text" name="weight"></td>
+    </tr>
+    <tr>
+        <td>是否高亮</td>
+        <td><select name="highlight">
+            <option value="N">否</option>
+            <option value="Y">是</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>备注</td>
+        <td><input type="text" name="remarks"></td>
+    </tr>
+    <tr>
+        <td>状态</td>
+        <td><select name="status">
+            <option value="Y">启用</option>
+            <option value="N">禁用</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" name="" value="提交"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quick link</title>
+</head>
+<body>
+<h3>quick link</h3>
+<a href="<?=site_url('quick_link/add');?>">添加</a>
+<table>
+    <tr>
+        <th>NO.</th>
+        <th>ID</th>
+        <th>名称</th>
+        <th>网址</th>
+        <th>推广网址</th>
+        <th>图片</th>
+        <th>权重</th>
+        <th>是否高亮</th>
+        <th>备注</th>
+        <th>状态</th>
+        <th>操作</th>
+        
+    </tr>
+    <?php foreach($list as $key=>$val) : ?>
+    <tr>
+        <td><?=$key?></td>
+        <td><?=$val->id?></td>
+        <td><?=$val->name?></td>
+        <td><?=$val->url?></td>
+        <td><?=$val->tuiguang_url?></td>
+        <td><?=$val->image?></td>
+        <td><?=$val->weight?></td>
+        <td><?=$val->highlight?></td>
+        <td><?=$val->remarks?></td>
+        <td><?=$val->status?></td>
+        <td><a href="<?=site_url('quick_link/edit/'.$val->id)?>">编辑</a></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+</body>
+</html>

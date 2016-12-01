@@ -1,5 +1,5 @@
 <div class="layout" id="main">
-    <div id="content">
+    <div id="content" class="clear">
         <h4><?=$category_name;?></h4>
         <?php foreach($merchant_list as $v): ?>
         <div class="item">
@@ -8,7 +8,6 @@
             <div><?=$v->short_desc;?></div>
         </div>
         <?php endforeach; ?>
-        
-        <div class="clear"></div>
+
         </div>
     </div>

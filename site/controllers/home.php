@@ -31,6 +31,12 @@ print_r($datas['list']);
         $new_activity = $this->activity_model->getNewActivity();
         $datas['new_activity'] = $new_activity;
 
+        //获取快速链接数据
+        $this->load->model('quick_link_model');
+        $ql = $this->quick_link_model->get_quick_link_list();
+        $datas['quick_link'] = $ql;
+        print_r($ql);
+
         $this->load->view('common/header.html');
         $this->load->view('home/index.html',$datas);
         $this->load->view('common/footer.html');

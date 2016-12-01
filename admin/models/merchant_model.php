@@ -48,15 +48,15 @@ class Merchant_model extends CI_Model {
         $data = array(
             'site_id' => $tmp['site_id'],
             'site_name' => $tmp['site_name'],
-            'category_id' => $tmp['site_id'],
+            'category_id' => $tmp['category_id'],
             'site_url' => $tmp['site_url'],
-            'tuiguang_url' => $tmp['site_id'],
+            'tuiguang_url' => $tmp['tuiguang_url'],
             'logo_url' => $tmp['logo_url'],
             'short_desc' => $tmp['short_desc'],
             'status' => $tmp['status'],
             'weight' => $tmp['weight'],
             'remarks' => $tmp['remarks'],
-            'hot' => $tmp['site_id'],
+            'hot' => $tmp['hot'],
             'create_time' => date('Y-m-d')
         );
         return $this->db->query($sql,$data);
@@ -84,15 +84,15 @@ class Merchant_model extends CI_Model {
         ";
         $data = array(
             'site_name' => $tmp['site_name'],
-            'category_id' => $tmp['site_id'],
+            'category_id' => $tmp['category_id'],
             'site_url' => $tmp['site_url'],
-            'tuiguang_url' => $tmp['site_id'],
+            'tuiguang_url' => $tmp['tuiguang_url'],
             'logo_url' => $tmp['logo_url'],
             'short_desc' => $tmp['short_desc'],
             'status' => $tmp['status'],
             'weight' => $tmp['weight'],
             'remarks' => $tmp['remarks'],
-            'hot' => $tmp['site_id'],
+            'hot' => $tmp['hot'],
             'create_time' => date('Y-m-d'),
             'site_id' => $tmp['site_id'],
         );
