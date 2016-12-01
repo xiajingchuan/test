@@ -35,7 +35,6 @@ print_r($datas['list']);
         $this->load->model('quick_link_model');
         $ql = $this->quick_link_model->get_quick_link_list();
         $datas['quick_link'] = $ql;
-        print_r($ql);
 
         $this->load->view('common/header.html');
         $this->load->view('home/index.html',$datas);

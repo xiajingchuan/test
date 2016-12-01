@@ -16,7 +16,7 @@ a{
 header{
     width:100%;
     height:100px;
-    background-color: #eee;
+    background-color: #bf2921;
     margin-bottom: 20px;
 }
 
@@ -55,16 +55,18 @@ footer{
 #list dl{
     height:30px;
     line-height: 30px;
+    overflow: hidden;
 }
 #list dl dt,dd{
     float:left;
     text-align: center;
+
 }
 #list dl dt{
     width:80px;
 }
 #list dl dt a{
-    color:#3352f1;
+    color:#bf2921;
 }
 #list dl dd{
     width:114px;
