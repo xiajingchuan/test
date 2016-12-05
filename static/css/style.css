@@ -40,12 +40,17 @@ footer{
 #hot ul li{
     float:left;
     position: relative;
-}
-#hot a{
+    text-align: center;
     width:133px;
     height:80px;
-    
+    padding-top: 10px;
+}
+#hot ul li a{
     display: block;
+}
+#hot ul li img{
+    width:120px;
+    height:40px;
 }
 #list {
     float:left;
