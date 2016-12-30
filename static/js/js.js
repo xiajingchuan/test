@@ -1,9 +1,9 @@
 
 function show_search_list(search_value) {
     var list = [
-        {"name":"京东","url":"http://www.jd.com","image":""},
-        {"name":"淘宝","url":"http://www.taobao.com","image":""},
-        {"name":"百度","url":"http://www.baidu.com","image":""}
+        {"name":"京东","url":"https://search.jd.com/Search?keyword=","image":""},
+        {"name":"淘宝","url":"https://s.taobao.com/search?q=","image":""},
+        {"name":"百度","url":"https://www.baidu.com/s?tn=baidu&wd=","image":""}
     ];
 
     var html = '';
@@ -12,7 +12,7 @@ function show_search_list(search_value) {
         if (i === (list.length-1)) {
             data_tag = 'end';
         }
-        html += '<a class="searcher" tabindex="'+(i+2)+'" data-tag="'+data_tag+'" href="'+list[i].url+'" target="_blank">';
+        html += '<a class="searcher" tabindex="'+(i+2)+'" data-tag="'+data_tag+'" href="'+list[i].url+search_value+'" target="_blank">';
         html += '<span>'+search_value + '</span><span>'+ list[i].name + '</span></a>';
     }
     html += '<a href="javascript:hidden_search_list()"><span></span><span>关闭</span></a>';
