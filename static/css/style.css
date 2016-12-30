@@ -13,13 +13,80 @@ a{
 .clear:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
 .clear{zoom:1} 
 /* 清除浮动end */
+.hidden{
+    display:none;
+}
+.show{
+    display: block;
+}
+#top {
+    height:20px;
+    line-height: 20px;
+    width:100%;
+    border-bottom: 2px solid #ccc;
+    border-top: 1px solid #ccc;
+}
 header{
     width:100%;
     height:100px;
-    background-color: #bf2921;
+    /*background-color: #bf2921;*/
     margin-bottom: 20px;
 }
+#head .head_left{
+    float: left;
+    width:30%;
+}
+#head .head_right{
+    float: right;
+    width:70%;
 
+}
+
+
+/*搜索框*/
+#head .head_right form{
+    margin-top: 30px;
+}
+#head #search_box{
+    width:500px;
+    margin:0 auto;
+}
+#head .head_right input{
+    width:500px;
+    height:40px;
+    padding:0 5px;
+    outline:none;
+}
+#head #search_box #search_list {
+    border:1px solid #ddd;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    width:498px;
+}
+
+#head #search_box #search_list a {
+    display: block;
+    height:30px;
+    line-height: 30px;
+    padding:0 5px;
+    border-bottom: 1px dashed #ddd;
+    outline:none;
+}
+#head #search_box #search_list .searcher:focus {
+    background-color: #ddd;
+}
+#head #search_box #search_list .searcher:hover {
+    background-color: #ddd;
+}
+#head #search_box #search_list a span{
+    display: inline-block;
+    overflow: hidden;
+}
+#head #search_box #search_list a span:first-child{
+    width:450px;
+}
+/* 搜索框end*/
 footer{
     width:100%;
     height:50px;

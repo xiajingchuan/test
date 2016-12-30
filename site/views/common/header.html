@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <title>网站标题</title>
     <link rel="stylesheet" type="text/css" href="<?=site_url();?>static/css/style.css">
+    
 </head>
 <body>
-    <header>
+    <div id="top">
         <div class="layout">
-            
+            2016年12月5日，距离元旦还有25天 打算出行的你该<a href="#">订机票</a>了
+        </div>
+    </div>
+    <header>
+        <div class="layout clear" id="head">
+            <div class="head_left">
+            <a href="#">
+                <img src="" />
+            </a>
+            </div>
+            <div class="head_right">
+                <div id="search_box">
+                    <form>
+                        <input type="text" name="search" id="search_bar" tabindex="1" onkeyup="show_search_list(this.value)" oninput="show_search_list(this.value)">
+                    </form>
+                    <div id="search_list" class="hidden">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
