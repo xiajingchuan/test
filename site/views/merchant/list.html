@@ -3,10 +3,10 @@
         <h4><?=$category_name;?></h4>
         <?php foreach($merchant_list as $v): ?>
         <div class="item">
-            <a href="<?=choice($v->site_url,$tuiguang_url);?>" >
+            <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" >
                 <img src="<?=site_url();?>static/image/m/<?=$v->logo_url;?>" alt="">
             </a>
-            <a class="name" href="<?=choice($v->site_url,$tuiguang_url);?>"><?=$v->site_name;?></a>
+            <a class="name" href="<?=choice($v->site_url,$v->tuiguang_url);?>"><?=$v->site_name;?></a>
             <div><?=$v->short_desc;?></div>
         </div>
         <?php endforeach; ?>

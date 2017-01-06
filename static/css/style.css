@@ -185,7 +185,7 @@ footer{
 }
 .item{
     width:120px;
-    height:150px;
+    /*height:150px;*/
     border:1px solid #ccc;
     padding:10px 14.5px;
     float:left;
@@ -200,6 +200,7 @@ footer{
     line-height: 20px;
 }
 .item div{
+    display: none;
     text-align: left;
     overflow: hidden;
     color:#888;
