@@ -3,7 +3,7 @@
         <ul class="clear">
             <?php foreach($hot as $k=>$v): ?>
             <li>
-                <a href="<?=choice($v->site_url,$v->tuiguang_url);?>">
+                <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" target="_blank">
                     <img src="static/image/m/<?=$v->logo_url;?>">
                 </a>
             </li>
@@ -17,7 +17,7 @@
                 <dl>
                     <dt><a href="<?=site_url('merchant/show/'.$v['category_id']);?>"><?=$v['category_name'];?></a></dt>
                     <?php foreach($v['list'] as $l): ?>
-                    <dd><a href="<?=choice($l->site_url,$l->tuiguang_url);?>"><?=$l->site_name;?></a></dd>
+                    <dd><a href="<?=choice($l->site_url,$l->tuiguang_url);?>" target="_blank"><?=$l->site_name;?></a></dd>
                     <?php endforeach; ?>
                 </dl>
             <?php endforeach; ?>
@@ -30,7 +30,7 @@
                 <ul class="clear link">
                     <?php foreach($quick_link as $v): ?>
                     <li>
-                        <a href="<?=choice($v->url,$v->tuiguang_url);?>">
+                        <a href="<?=choice($v->url,$v->tuiguang_url);?>" target="_blank">
                             <img src="<?=site_url();?>static/image/l/<?=$v->image;?>">
                             <span class="<?=$v->highlight=='Y'?'highlight':'';?>"><?=$v->name;?></span>
                         </a>

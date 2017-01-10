@@ -91,8 +91,11 @@ footer{
     width:100%;
     height:50px;
     line-height: 50px;
-    background-color: #ddd;
+    background-color: #eee;
     text-align: center;
+    margin-top:15px;
+    font-size:13px;
+    color:#777;
 }
 .layout{
     width:1200px;
@@ -108,9 +111,8 @@ footer{
     float:left;
     position: relative;
     text-align: center;
-    width:133px;
-    height:80px;
-    padding-top: 10px;
+    width:120px;
+    margin:15px 15px;
 }
 #hot ul li a{
     display: block;
@@ -122,23 +124,30 @@ footer{
 #list {
     float:left;
     width:880px;
-    border:1px solid #eee;
+    border:1px solid #ddd;
 }
 #list dl{
-    height:30px;
-    line-height: 30px;
+    height:35px;
+    line-height: 35px;
     overflow: hidden;
 }
 #list dl dt,dd{
     float:left;
     text-align: center;
+}
 
+#list dl a{
+    display: block;   
+}
+#list dl dd a:hover{
+    color:red;
 }
 #list dl dt{
     width:80px;
 }
 #list dl dt a{
     color:#bf2921;
+
 }
 #list dl dd{
     width:114px;
@@ -147,7 +156,7 @@ footer{
 #aside{
     float:right;
     width:300px;
-    border:1px solid #eee;
+    border:1px solid #ddd;
 }
 #aside .link li{
     float:left;
@@ -163,6 +172,7 @@ footer{
 }
 #aside .link li a span{
     display: block;
+    margin-top:5px;
 }
 #aside .cx_list li{
     height: 30px;
@@ -174,23 +184,28 @@ footer{
 #content {
     width: 100%;
     overflow: hidden;
-    border:1px solid #bbb;
+    border:1px solid #ddd;
 }
 #content h4{
     height: 30px;
     line-height: 30px;
-    font-size:14px;
+    font-size:15px;
     padding-left: 10px;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ddd;
+    color:#555;
 }
 .item{
     width:120px;
     /*height:150px;*/
-    border:1px solid #ccc;
+    border:1px solid #ddd;
     padding:10px 14.5px;
     float:left;
     margin: 10px;
     text-align: center;
+}
+.item img{
+    width:120px;
+    height:40px;
 }
 .item a{
     display: block;
