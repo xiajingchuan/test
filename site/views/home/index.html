@@ -19,6 +19,9 @@
                     <?php foreach($v['list'] as $l): ?>
                     <dd><a href="<?=choice($l->site_url,$l->tuiguang_url);?>" target="_blank"><?=$l->site_name;?></a></dd>
                     <?php endforeach; ?>
+                    <dd>
+                        <a href="<?=site_url('merchant/show/'.$v['category_id']);?>">有-></a>
+                    </dd>
                 </dl>
             <?php endforeach; ?>
                 

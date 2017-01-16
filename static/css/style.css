@@ -143,14 +143,17 @@ footer{
     color:red;
 }
 #list dl dt{
-    width:80px;
+    width:90px;
 }
 #list dl dt a{
     color:#bf2921;
 
 }
 #list dl dd{
-    width:114px;
+    width:120px;
+}
+#list dl dd:last-child{
+    width:70px;
 }
 
 #aside{
