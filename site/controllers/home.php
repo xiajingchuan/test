@@ -23,7 +23,7 @@ class Home extends CI_Controller {
                 'list' => $merchant_list
                 );
         }
-print_r($datas['list']);
+//print_r($datas['list']);
 
         $datas['hot'] = $hot;
         //获取活动信息
