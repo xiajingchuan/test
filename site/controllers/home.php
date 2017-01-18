@@ -12,7 +12,7 @@ class Home extends CI_Controller {
     public function index()
     {
         $this->load->model('merchant_model');
-        $hot = $this->merchant_model->getHotMerchant();
+        $hot = $this->merchant_model->getHotMerchant(24);
 
         $category = $this->merchant_model->getMerchantCategory();
         foreach ($category as $val) {
