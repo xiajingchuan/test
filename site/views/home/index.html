@@ -4,7 +4,7 @@
             <?php foreach($hot as $k=>$v): ?>
             <li>
                 <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" target="_blank">
-                    <img src="static/image/m/<?=$v->logo_url;?>">
+                    <img src="<?=base_url();?>static/image/m/<?=$v->logo_url;?>">
                 </a>
             </li>
             <?php endforeach;?>
@@ -20,7 +20,7 @@
                     <dd><a href="<?=choice($l->site_url,$l->tuiguang_url);?>" target="_blank"><?=$l->site_name;?></a></dd>
                     <?php endforeach; ?>
                     <dd>
-                        <a href="<?=site_url('merchant/show/'.$v['category_id']);?>">有-></a>
+                        <a class="more" href="<?=site_url('merchant/show/'.$v['category_id']);?>">>></a>
                     </dd>
                 </dl>
             <?php endforeach; ?>
@@ -34,13 +34,25 @@
                     <?php foreach($quick_link as $v): ?>
                     <li>
                         <a href="<?=choice($v->url,$v->tuiguang_url);?>" target="_blank">
-                            <img src="<?=site_url();?>static/image/l/<?=$v->image;?>">
+                            <img src="<?=base_url();?>static/image/l/<?=$v->image;?>">
                             <span class="<?=$v->highlight=='Y'?'highlight':'';?>"><?=$v->name;?></span>
                         </a>
                     </li>
                     <?php endforeach;?>
                 </ul>
                 <!-- 快速链接end -->
+                <!--工具-->
+                <ul class="clear tools">
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>手机充值</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>水电燃气</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>火车票</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>飞机票</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>彩票</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>外卖</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>超市</span></a></li>                
+                    <li><a href="#"><img src="<?=base_url()?>static/image/l/phone.png" alt="tools"><span>车险</span></a></li>                
+                </ul>
+                <!--工具end-->
                 <!--促销信息-->
                 <!--
                 <h4>促销信息</h4>

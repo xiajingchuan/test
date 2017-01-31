@@ -1,13 +1,12 @@
 <div class="layout" id="main">
+    <h4><?=$category_name;?></h4>
     <div id="content" class="clear">
-        <h4><?=$category_name;?></h4>
         <?php foreach($merchant_list as $v): ?>
         <div class="item">
-            <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" >
-                <img src="<?=site_url();?>static/image/m/<?=$v->logo_url;?>" alt="">
+            <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" target="_blank">
+                <img src="<?=base_url();?>static/image/m/<?=$v->logo_url;?>" alt="">
+                <span><?=$v->site_name;?></span>
             </a>
-            <a class="name" href="<?=choice($v->site_url,$v->tuiguang_url);?>"><?=$v->site_name;?></a>
-            <div><?=$v->short_desc;?></div>
         </div>
         <?php endforeach; ?>
         </div>
