@@ -13,6 +13,9 @@ a{
 .clear:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
 .clear{zoom:1} 
 /* 清除浮动end */
+body{
+    background-color: #f6f6f9;
+}
 .hidden{
     display:none;
 }
@@ -23,25 +26,28 @@ a{
     height:20px;
     line-height: 20px;
     width:100%;
-    border-bottom: 2px solid #ccc;
-    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    background-color: white;
 }
 header{
     width:100%;
     height:100px;
-    /*background-color: #bf2921;*/
-    margin-bottom: 20px;
+    background-color: #bf2921;
+    /*background-color: white;*/
 }
 #head .head_left{
     float: left;
-    width:30%;
+    width:340px;
+    padding-top:20px;
+}
+#head .head_left img{
+    height:60px;
 }
 #head .head_right{
     float: right;
-    width:70%;
+    width:840px;
 
 }
-
 
 /*搜索框*/
 #head .head_right form{
@@ -52,17 +58,21 @@ header{
     margin:0 auto;
 }
 #head .head_right input{
-    width:500px;
-    height:40px;
+    width:100%;
+    height:36px;
     padding:0 5px;
     outline:none;
+    line-height: 40px;
+    font-size: 20px;
+    color:#777;
+    border: 2px solid white;
 }
 #head #search_box #search_list {
-    border:1px solid #ddd;
+    border:2px solid #ddd;
     background-color: white;
     position: absolute;
     z-index: 999;
-    width:498px;
+    width:510px;
 }
 
 #head #search_box #search_list a {
@@ -70,8 +80,11 @@ header{
     height:30px;
     line-height: 30px;
     padding:0 5px;
-    border-bottom: 1px dashed #ddd;
+    
     outline:none;
+}
+#head #search_box #search_list .searcher{
+    border-bottom: 1px dashed #ddd;
 }
 #head #search_box #search_list .searcher:focus {
     background-color: #ddd;
@@ -91,9 +104,7 @@ footer{
     width:100%;
     height:50px;
     line-height: 50px;
-    background-color: #eee;
     text-align: center;
-    margin-top:15px;
     font-size:13px;
     color:#777;
 }
@@ -104,32 +115,45 @@ footer{
 }
 #hot{
     width:100%;
-    border:1px solid #ddd;
-    margin-bottom:20px;
+    /*border:1px solid #ddd;*/
+    margin-bottom:15px;
+    margin-top:20px;
+    background-color: white;
 }
 #hot ul li{
     float:left;
     position: relative;
     text-align: center;
-    width:120px;
-    margin:15px 15px;
+    border-bottom: 1px solid #f6f6f9; 
+    border-right:1px solid #f6f6f9;
+}
+#hot ul li:hover{
+    border: 1px solid red; 
+    margin-left: -1px;
+    margin-top:-1px;
 }
 #hot ul li a{
     display: block;
 }
 #hot ul li img{
-    width:120px;
+    width:119px;
     height:40px;
+    margin:15px;
 }
 #list {
     float:left;
     width:880px;
-    border:1px solid #ddd;
+    /*border:1px solid #ddd;*/
+    background-color: white;
+    padding:10px 0;
 }
 #list dl{
     height:35px;
     line-height: 35px;
     overflow: hidden;
+}
+#list dl:nth-of-type(even){
+    background-color: #fbfbfb;
 }
 #list dl dt,dd{
     float:left;
@@ -140,14 +164,19 @@ footer{
     display: block;   
 }
 #list dl dd a:hover{
-    color:red;
+    color:#bf2921;
+    text-decoration:underline;
 }
 #list dl dt{
     width:90px;
+
 }
 #list dl dt a{
     color:#bf2921;
-
+    font-size:15px;
+}
+#list dl dt a:hover{
+    font-size: 17px;
 }
 #list dl dd{
     width:120px;
@@ -155,11 +184,15 @@ footer{
 #list dl dd:last-child{
     width:70px;
 }
-
+.more{
+    color:#888;
+    float:right;
+}
 #aside{
     float:right;
     width:300px;
-    border:1px solid #ddd;
+ /*   border:1px solid #ddd;*/
+    background-color: white;
 }
 #aside .link li{
     float:left;
@@ -177,6 +210,26 @@ footer{
     display: block;
     margin-top:5px;
 }
+/*工具*/
+#aside .tools{
+    border-top: 2px solid red;
+}
+#aside .tools li{
+    float:left;
+    width:75px;
+}
+#aside .tools li a {
+    display: block;
+    text-align: center;
+    margin:12px 0;
+}
+#aside .tools li a img {
+    width:40px;
+}
+#aside .tools li a span{
+    display: block;
+    margin-top:5px;
+}
 #aside .cx_list li{
     height: 30px;
     line-height: 30px;
@@ -184,38 +237,43 @@ footer{
 }
 
 /*商家列表页*/
+#main h4{
+    height: 40px;
+    line-height: 40px;
+    font-size:20px;
+    color:#2a2a2a;
+    margin-top: 10px;
+}
 #content {
     width: 100%;
     overflow: hidden;
-    border:1px solid #ddd;
+    background-color: white;
 }
-#content h4{
-    height: 30px;
-    line-height: 30px;
-    font-size:15px;
-    padding-left: 10px;
-    border-bottom: 1px solid #ddd;
-    color:#555;
-}
+
 .item{
-    width:120px;
-    /*height:150px;*/
-    border:1px solid #ddd;
-    padding:10px 14.5px;
+    width:150px;
+    margin:10px 10px;
     float:left;
-    margin: 10px;
     text-align: center;
+}
+
+.item:hover{
+    background-color: #eee;
+}
+.item a{
+    display: block;
+    padding:10px 5px;
 }
 .item img{
     width:120px;
     height:40px;
 }
-.item a{
+
+.item span{
+    height:25px;
+    line-height: 35px;
+    overflow: hidden;
     display: block;
-}
-.item .name{
-    height:20px;
-    line-height: 20px;
 }
 .item div{
     display: none;
