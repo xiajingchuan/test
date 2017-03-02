@@ -8,7 +8,7 @@ class Merchant_model extends CI_Model {
     {
         $this->load->database();
     }
-
+ 
     /**
      * 获取热门商家
      */

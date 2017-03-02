@@ -21,4 +21,4 @@ class Quick_link_model extends CI_Model {
                  ->get();
         return $query->result();
     }
-}
+} 
