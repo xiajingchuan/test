@@ -4,7 +4,7 @@
             <?php foreach($hot as $k=>$v): ?>
             <li>
                 <a href="<?=choice($v->site_url,$v->tuiguang_url);?>" target="_blank">
-                    <img src="<?=base_url();?>static/image/m/<?=$v->logo_url;?>">
+                    <img alt="<?=$v->site_name;?>" width="119" height="40" src="<?=base_url();?>static/image/m/<?=$v->logo_url;?>">
                 </a>
             </li>
             <?php endforeach;?>
