@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 活动页控制器
  */
  
-class Activity extends CI_Controller {
+class Activity extends MY_Controller {
 
     /**
      * 活动页列表方法

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 首页控制器
  */
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
 
     /**
      * 首页方法
