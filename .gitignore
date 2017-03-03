@@ -1,6 +1,7 @@
 .DS_Store
 /site/config/
 /admin/config/
+sftp-config.json
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
