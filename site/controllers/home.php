@@ -27,14 +27,19 @@ class Home extends MY_Controller {
 
         $datas['hot'] = $hot;
         //获取活动信息
-        $this->load->model('activity_model');
-        $new_activity = $this->activity_model->getNewActivity();
-        $datas['new_activity'] = $new_activity;
+        //$this->load->model('activity_model');
+        //$new_activity = $this->activity_model->getNewActivity();
+        //$datas['new_activity'] = $new_activity;
 
-        //获取快速链接数据
+        //获取商品分类快速链接数据
         $this->load->model('quick_link_model');
-        $ql = $this->quick_link_model->get_quick_link_list();
+        $ql = $this->quick_link_model->getProductCateLink();
         $datas['quick_link'] = $ql;
+
+        //获取广告数据
+        $this->load->model('adv_model');
+        $adv = $this->adv_model->getAdv();
+        $datas['adv'] = $adv;
 
         $this->load->view('common/header.html');
         $this->load->view('home/index.html',$datas);

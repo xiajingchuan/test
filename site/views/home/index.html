@@ -54,22 +54,17 @@
                 </ul>
                 <!--工具end-->
                 <!--adv-->
-                <script type="text/javascript">var jd_union_unid="1000140465",jd_ad_ids="514:6",jd_union_pid="CMq/g5CkKxCx3fPcAxoAIOzhqr8CKgA=";var jd_width=300;var jd_height=300;var jd_union_euid="";var p="BRYDVhNeEQUXNwpfBkgyTUMIRmtKRk9aZV8ETVxNNwpfBkgyElMoYTJeaVNlAlsOb3VJDyddPn4ccgtZK1wRBhEOUBlcHDISBlQaWxADFwBRK2tKRk9aZVA1FDJNQwhGaxUHGwFVHFwUABQPUhlrFDIiNw%3D%3D";</script><script type="text/javascript" charset="utf-8" src="//u.x.jd.com/static/js/auto.js"></script>
+                <div id="adv">
+                    <?php if ($adv['code']) {?>
+                        <?=$adv['code'];?>
+                    <?php }else{ ?>
+                    <a href="<?=$adv['url']?>" title="<?=$adv['title']?>" target="_blank">
+                        <img src="<?=$adv['img']?>" width=300 height=300>
+                    </a>
+                    <?php } ?>
+                </div>
                 <!--adv end-->
-                <!--促销信息-->
-                <!--
-                <h4>促销信息</h4>
-                <ul class="cx_list">
-                    <?php foreach($new_activity as $a) : ?>
-                    <li class="xian1">
-                        <a href="<?=$a->id;?>">
-                        <?=$a->title;?>
-                        </a>
-                    </li>
-                    <?php endforeach;?> 
-                </ul>
-                -->
-                <!--促销信息end-->
+                
             </aside>
             <!--侧边栏end-->
     </div>
