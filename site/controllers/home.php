@@ -45,4 +45,8 @@ class Home extends MY_Controller {
         $this->load->view('home/index.html',$datas);
         $this->load->view('common/footer.html');
     }
+
+    public function test() {
+        $this->load->view('test/demo_fontclass.html');
+    }
 }
