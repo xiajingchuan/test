@@ -202,36 +202,53 @@ footer{
 #aside .link li a {
     display: block;
     text-align: center;
-    margin:12px 0;
+    margin: 5px;
+    padding:5px;
+    background-color: #f3f3f3;
 }
 #aside .highlight{
     color:red;
 }
-#aside .link li a span{
-    display: block;
-    margin-top:5px;
+#aside .link li a:hover{
+    color:white;
+    background-color: #bf2921; 
 }
+
 /*工具*/
 #aside .tools{
-    border-top: 2px solid red;
+    border-top: 1px solid #bf2921;
 }
 #aside .tools li{
     float:left;
-    width:75px;
+    width:59px;
+    border-bottom: 1px solid #f6f6f9;
+    border-right: 1px solid #f6f6f9;
 }
 #aside .tools li a {
     display: block;
     text-align: center;
     margin:12px 0;
 }
-#aside .tools li a img {
-    width:40px;
-}
+
 #aside .tools li a span{
     display: block;
     margin-top:5px;
+    font-size:10px;
+    color:#777;
 }
 
+.iconfont{
+    font-size:25px;
+    line-height: 30px;
+    color:#555;
+    -webkit-transition: font-size 0.25s ease-out 0s;
+    -moz-transition: font-size 0.25s ease-out 0s;
+    transition: font-size 0.25s ease-out 0s;
+}
+
+.iconfont:hover{
+  font-size: 30px;
+}
 
 /*商家列表页*/
 #main h4{
