@@ -10,15 +10,30 @@ class Quick_link_model extends CI_Model {
     }
 
     /**
-     * 获取快速链接列表   
+     * 获取商品分类快速链接列表   
      */
-    public function get_quick_link_list() {
+    public function getProductCateLink() {
         $query = $this->db->select('name,url,tuiguang_url,image,highlight')
                  ->from('quick_link')
                  ->where('status', 'Y')
+                 ->where('type', 'P')
                  ->order_by('weight')
                  ->limit(12)
                  ->get();
         return $query->result();
     }
-}
+
+    /**
+     * 获取栏目分类快速链接列表   
+     */
+    public function getLanmuLink() {
+        $query = $this->db->select('name,url,tuiguang_url,image,highlight')
+                 ->from('quick_link')
+                 ->where('status', 'Y')
+                 ->where('type', 'L')
+                 ->order_by('weight')
+                 ->limit(12)
+                 ->get();
+        return $query->result();
+    }
+} 

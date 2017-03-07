@@ -21,4 +21,4 @@ class Activity_model extends CI_Model {
                  ->get();
         return $query->result();
     }
-}
+} 

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 商家控制器
  */
 
-class Merchant extends CI_Controller {
+class Merchant extends MY_Controller {
 
     /**
      * 商家列表

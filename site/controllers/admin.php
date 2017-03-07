@@ -3,8 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * 后台控制器
  */
-
-class Admin extends CI_Controller {
+ 
+class Admin extends MY_Controller {
 
     /**
      * 后台首页

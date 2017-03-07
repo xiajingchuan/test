@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 首页控制器
  */
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
 
     /**
      * 首页方法
@@ -27,17 +27,26 @@ class Home extends CI_Controller {
 
         $datas['hot'] = $hot;
         //获取活动信息
-        $this->load->model('activity_model');
-        $new_activity = $this->activity_model->getNewActivity();
-        $datas['new_activity'] = $new_activity;
+        //$this->load->model('activity_model');
+        //$new_activity = $this->activity_model->getNewActivity();
+        //$datas['new_activity'] = $new_activity;
 
-        //获取快速链接数据
+        //获取商品分类快速链接数据
         $this->load->model('quick_link_model');
-        $ql = $this->quick_link_model->get_quick_link_list();
+        $ql = $this->quick_link_model->getProductCateLink();
         $datas['quick_link'] = $ql;
+
+        //获取广告数据
+        $this->load->model('adv_model');
+        $adv = $this->adv_model->getAdv();
+        $datas['adv'] = $adv;
 
         $this->load->view('common/header.html');
         $this->load->view('home/index.html',$datas);
         $this->load->view('common/footer.html');
+    }
+
+    public function test() {
+        $this->load->view('test/demo_fontclass.html');
     }
 }

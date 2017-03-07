@@ -31,6 +31,7 @@ body{
 }
 header{
     width:100%;
+    min-width: 1200px;
     height:100px;
     background-color: #bf2921;
     /*background-color: white;*/
@@ -230,11 +231,7 @@ footer{
     display: block;
     margin-top:5px;
 }
-#aside .cx_list li{
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-}
+
 
 /*商家列表页*/
 #main h4{

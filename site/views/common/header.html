@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>网站标题</title>
+    <title><?=$this->site['title'];?></title>
+    <meta name="Keywords" content="<?=$this->site['keywords'];?>" />
+    <meta name="description" content="<?=$this->site['description'];?>" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="<?=base_url();?>static/css/style.css">
-    
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url();?>static/font/iconfont.css">
 </head>
 <body>
     <!--<div id="top">
         <div class="layout">
-            2016年12月5日，距离元旦还有25天 打算出行的你该<a href="#">订机票</a>了
-        </div> 
+        </div>
     </div>-->
     <header>
         <div class="layout clear" id="head">
             <div class="head_left">
             <a href="<?=site_url();?>">
-                <img src="<?=base_url();?>static/image/logo.png" />
+                <img src="<?=base_url();?>static/image/logo.png" alt="<?=$this->site['title'];?>"/>
             </a>
             </div>
             <div class="head_right">
@@ -32,4 +33,4 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header><i class="iconfont icon-shouji"></i>
