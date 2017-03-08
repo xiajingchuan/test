@@ -12,7 +12,7 @@ class Home extends MY_Controller {
     public function index()
     {
         $this->load->model('merchant_model');
-        $hot = $this->merchant_model->getHotMerchant(24);
+        $hot = $this->merchant_model->getHotMerchant(16);
 
         $category = $this->merchant_model->getMerchantCategory();
         foreach ($category as $val) {
@@ -20,10 +20,10 @@ class Home extends MY_Controller {
             $datas['list'][] = array(
                 'category_id' => $val->id,
                 'category_name' => $val->name,
-                'list' => $merchant_list
+                'list' => $merchant_list 
                 );
         }
-//print_r($datas['list']);
+print_r($datas['list']);
 
         $datas['hot'] = $hot;
         //获取活动信息

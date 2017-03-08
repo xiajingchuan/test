@@ -195,7 +195,7 @@ footer{
  /*   border:1px solid #ddd;*/
     background-color: white;
 }
-#aside .link li{
+/*#aside .link li{
     float:left;
     width:75px;
 }
@@ -212,11 +212,27 @@ footer{
 #aside .link li a:hover{
     color:white;
     background-color: #bf2921; 
+}*/
+#aside .link{
+    padding:5px 0;
 }
+#aside .link li {
+    float:left;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+#aside .link .iconfont{
+    font-size: 20px;
+    color:#bf2921;
+    margin-right: 5px;
+}
+
 
 /*工具*/
 #aside .tools{
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
 }
 #aside .tools li{
     float:left;
@@ -236,7 +252,7 @@ footer{
     color:#777;
 }
 
-.iconfont{
+.tools .iconfont{
     font-size:25px;
     line-height: 30px;
     color:#888;
@@ -244,7 +260,7 @@ footer{
     -moz-transition: font-size 0.25s ease-out 0s;
     transition: font-size 0.25s ease-out 0s;
 }
-.iconfont:hover{
+.tools .iconfont:hover{
   font-size: 30px;
   color:#666;
 }

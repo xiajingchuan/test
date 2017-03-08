@@ -32,14 +32,40 @@
                 <!--快速链接-->
                 <ul class="clear link">
                     <?php foreach($quick_link as $v): ?>
-                    <li>
+                    <!--<li>
                         <a href="<?=choice($v->url,$v->tuiguang_url);?>" target="_blank" class="<?=$v->highlight=='Y'?'highlight':'';?>">
                             <?=$v->name;?>
                         </a>
-                    </li>
+                    </li>-->
                     <?php endforeach;?>
+                    <li><a href="#"><i class="iconfont icon-kuaidi"></i><span>快递查询</span></a></li> 
+                    <li><a href="#"><i class="iconfont icon-shoujichongzhi"></i><span>手机充值</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>   
+                    <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li> 
+                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>  
                 </ul>
                 <!-- 快速链接end -->
+                <!--adv-->
+                <div id="adv">
+                    <?php if ($adv['code']) {?>
+                        <?=$adv['code'];?>
+                    <?php }else{ ?>
+                    <a href="<?=$adv['url']?>" title="<?=$adv['title']?>" target="_blank">
+                        <img src="<?=$adv['img']?>" width=300 height=300>
+                    </a>
+                    <?php } ?>
+                </div>
+                <!--adv end-->
                 <!--工具-->
                 <ul class="clear tools"> 
                     <li><a href="#"><i class="iconfont icon-kuaidi"></i><span>快递查询</span></a></li> 
@@ -59,17 +85,7 @@
                     <li><a href="#"><i class="iconfont icon-jiayou"></i><span>加油卡</span></a></li> 
                 </ul>
                 <!--工具end-->
-                <!--adv-->
-                <div id="adv">
-                    <?php if ($adv['code']) {?>
-                        <?=$adv['code'];?>
-                    <?php }else{ ?>
-                    <a href="<?=$adv['url']?>" title="<?=$adv['title']?>" target="_blank">
-                        <img src="<?=$adv['img']?>" width=300 height=300>
-                    </a>
-                    <?php } ?>
-                </div>
-                <!--adv end-->
+                
                 
             </aside>
             <!--侧边栏end-->
