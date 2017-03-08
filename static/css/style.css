@@ -216,7 +216,7 @@ footer{
 
 /*工具*/
 #aside .tools{
-    border-top: 1px solid #bf2921;
+    border-top: 1px solid #ddd;
 }
 #aside .tools li{
     float:left;
@@ -227,12 +227,11 @@ footer{
 #aside .tools li a {
     display: block;
     text-align: center;
-    margin:12px 0;
+    margin:10px 0;
 }
 
 #aside .tools li a span{
     display: block;
-    margin-top:5px;
     font-size:10px;
     color:#777;
 }
@@ -240,14 +239,14 @@ footer{
 .iconfont{
     font-size:25px;
     line-height: 30px;
-    color:#555;
+    color:#888;
     -webkit-transition: font-size 0.25s ease-out 0s;
     -moz-transition: font-size 0.25s ease-out 0s;
     transition: font-size 0.25s ease-out 0s;
 }
-
 .iconfont:hover{
   font-size: 30px;
+  color:#666;
 }
 
 /*商家列表页*/
