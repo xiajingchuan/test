@@ -214,21 +214,57 @@ footer{
     background-color: #bf2921; 
 }*/
 #aside .link{
-    padding:5px 0;
+ 
 }
 #aside .link li {
     float:left;
-    width:90px;
-    height:30px;
-    line-height: 30px;
-    padding-left: 10px;
-}
-#aside .link .iconfont{
-    font-size: 20px;
-    color:#bf2921;
-    margin-right: 5px;
+    width:75px;
+    
+    text-align: center;
 }
 
+#aside .link .iconfont{ 
+    font-size: 40px;
+    /*color:#bf2921;*/
+}
+#aside .link a{
+    display: block;
+    height:75px;
+    color:white;
+    padding-top: 5px;
+}
+#aside .link a span{
+    display: block;
+}
+
+#aside .link .kuaidi{
+    background-color: #009f96;
+}
+#aside .link .kuaidi:hover{
+    background-color: white;
+    color:#009f96;
+}
+#aside .link .shoujichongzhi{
+    background-color: #027bd6;
+}
+#aside .link .shoujichongzhi:hover{
+    background-color: white;
+    color:#027bd6;
+}
+#aside .link .shuidianmei{
+    background-color: #a26742;
+}
+#aside .link .shuidianmei:hover{
+    background-color: white;
+    color:#a26742;
+}
+#aside .link .huoche{
+    background-color: #244d83;
+}
+#aside .link .huoche:hover{
+    background-color: white;
+    color:#244d83;
+}
 
 /*工具*/
 #aside .tools{
