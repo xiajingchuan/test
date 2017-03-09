@@ -23,10 +23,10 @@ class Home extends MY_Controller {
                 'list' => $merchant_list 
                 );
         }
-print_r($datas['list']);
+//print_r($datas['list']);
 
         $datas['hot'] = $hot;
-        //获取活动信息
+        //获取活动信息 
         //$this->load->model('activity_model');
         //$new_activity = $this->activity_model->getNewActivity();
         //$datas['new_activity'] = $new_activity;
