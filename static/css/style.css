@@ -227,44 +227,56 @@ footer{
     font-size: 40px;
     /*color:#bf2921;*/
 }
+#aside .link a span{
+    display: block;
+}
 #aside .link a{
     display: block;
     height:75px;
     color:white;
     padding-top: 5px;
 }
-#aside .link a span{
-    display: block;
+#aside .link a:hover{
+    background-color: white;
 }
-
 #aside .link .kuaidi{
     background-color: #009f96;
 }
 #aside .link .kuaidi:hover{
-    background-color: white;
     color:#009f96;
 }
 #aside .link .shoujichongzhi{
     background-color: #027bd6;
 }
 #aside .link .shoujichongzhi:hover{
-    background-color: white;
     color:#027bd6;
 }
 #aside .link .shuidianmei{
     background-color: #a26742;
 }
 #aside .link .shuidianmei:hover{
-    background-color: white;
     color:#a26742;
 }
 #aside .link .huoche{
     background-color: #244d83;
 }
 #aside .link .huoche:hover{
-    background-color: white;
     color:#244d83;
 }
+/*color: #de4a5f #1fb0b5 #38c26f #8473e1 #f77d8f #eaa62f #5d98e8 #7175e0 #c44ade #3aacdf #eb4d43*/
+/*
+女装 #ff5b79
+美妆 #e21c5e
+鞋   #b86837
+户外 #29bcc9
+运动 #67b5ff
+母婴 #d8b4d3
+食品 #ec7002
+手机 #027bd6
+厨具 #a26041
+家居 #be794e
+生鲜 #83d34a
+*/
 
 /*工具*/
 #aside .tools{

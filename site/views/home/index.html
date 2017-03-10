@@ -32,11 +32,12 @@
                 <!--快速链接-->
                 <ul class="clear link">
                     <?php foreach($quick_link as $v): ?>
-                    <!--<li>
-                        <a href="<?=choice($v->url,$v->tuiguang_url);?>" target="_blank" class="<?=$v->highlight=='Y'?'highlight':'';?>">
-                            <?=$v->name;?>
+                    <li>
+                        <a href="<?=choice($v->url,$v->tuiguang_url);?>" target="_blank" class="<?=$v->iconfont_code;?>">
+                            <i class="iconfont icon-<?=$v->iconfont_code;?>"></i>
+                            <span><?=$v->name;?></span>
                         </a>
-                    </li>-->
+                    </li>
                     <?php endforeach;?> 
                     <li><a href="#" class="kuaidi"><i class="iconfont icon-xiexiangbao"></i><span>快递查询</span></a></li> 
                     <li><a href="#" class="shoujichongzhi"><i class="iconfont icon-muyingwanju"></i><span>手机充值</span></a></li>                
@@ -46,13 +47,6 @@
                     <li><a href="#" class="caipiao"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
                     <li><a href="#" class="waimai"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
                     <li><a href="#" class="chaoshi"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>   
-                    <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li> 
-                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>  
                 </ul>
                 <!-- 快速链接end -->
                 <!--adv-->
@@ -69,13 +63,13 @@
                 <!--工具-->
                 <ul class="clear tools"> 
                     <li><a href="#"><i class="iconfont icon-kuaidi"></i><span>快递查询</span></a></li> 
-                    <li><a href="#"><i class="iconfont icon-shoujichongzhi"></i><span>手机充值</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-shoujichongzhi"></i><span>手机充值</span></a></li>
+                    <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>        
+                    <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li> 
+                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>         
+                    <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>         
                     <li><a href="#"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>                
+                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>        
                     <li><a href="#"><i class="iconfont icon-chexian"></i><span>车险</span></a></li>
                     <li><a href="#"><i class="iconfont icon-dianyingpiao"></i><span>电影票</span></a></li>
                     <li><a href="#"><i class="iconfont icon-licai"></i><span>理财</span></a></li>
@@ -85,7 +79,6 @@
                     <li><a href="#"><i class="iconfont icon-jiayou"></i><span>加油卡</span></a></li> 
                 </ul>
                 <!--工具end-->
-                
                 
             </aside>
             <!--侧边栏end-->

@@ -13,7 +13,7 @@ class Quick_link_model extends CI_Model {
      * 获取商品分类快速链接列表   
      */
     public function getProductCateLink() {
-        $query = $this->db->select('name,url,tuiguang_url,image,highlight')
+        $query = $this->db->select('name,url,tuiguang_url,image,iconfont_code')
                  ->from('quick_link')
                  ->where('status', 'Y')
                  ->where('type', 'P')
