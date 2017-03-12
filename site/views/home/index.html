@@ -38,48 +38,40 @@
                             <span><?=$v->name;?></span>
                         </a>
                     </li>
-                    <?php endforeach;?> 
-                    <li><a href="#" class="kuaidi"><i class="iconfont icon-xiexiangbao"></i><span>快递查询</span></a></li> 
-                    <li><a href="#" class="shoujichongzhi"><i class="iconfont icon-muyingwanju"></i><span>手机充值</span></a></li>                
-                    <li><a href="#" class="shuidianmei"><i class="iconfont icon-shumashouji"></i><span>水电燃气</span></a></li>                
-                    <li><a href="#" class="huoche"><i class="iconfont icon-nvzhuangneiyi"></i><span>火车票</span></a></li>                
-                    <li><a href="#" class="jipiao"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>                
-                    <li><a href="#" class="caipiao"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>                
-                    <li><a href="#" class="waimai"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
-                    <li><a href="#" class="chaoshi"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>   
+                    <?php endforeach;?>   
                 </ul>
                 <!-- 快速链接end -->
-                <!--adv-->
-                <div id="adv">
-                    <?php if ($adv['code']) {?>
-                        <?=$adv['code'];?>
-                    <?php }else{ ?>
-                    <a href="<?=$adv['url']?>" title="<?=$adv['title']?>" target="_blank">
-                        <img src="<?=$adv['img']?>" width=300 height=300>
-                    </a>
-                    <?php } ?>
-                </div>
-                <!--adv end-->
+               
                 <!--工具-->
                 <ul class="clear tools"> 
                     <li><a href="#"><i class="iconfont icon-kuaidi"></i><span>快递查询</span></a></li> 
                     <li><a href="#"><i class="iconfont icon-shoujichongzhi"></i><span>手机充值</span></a></li>
                     <li><a href="#"><i class="iconfont icon-shuidianmei"></i><span>水电燃气</span></a></li>        
                     <li><a href="#"><i class="iconfont icon-huoche"></i><span>火车票</span></a></li> 
-                    <li><a href="#"><i class="iconfont icon-jipiao"></i><span>飞机票</span></a></li>         
+                    <li><a href="#"><i class="iconfont icon-feiji2"></i><span>飞机票</span></a></li>         
                     <li><a href="#"><i class="iconfont icon-caipiao"></i><span>彩票</span></a></li>         
                     <li><a href="#"><i class="iconfont icon-waimai"></i><span>外卖</span></a></li>                
-                    <li><a href="#"><i class="iconfont icon-chaoshi"></i><span>超市</span></a></li>        
+                    <li><a href="#"><i class="iconfont icon-iconfontchaoshi"></i><span>超市</span></a></li>        
                     <li><a href="#"><i class="iconfont icon-chexian"></i><span>车险</span></a></li>
-                    <li><a href="#"><i class="iconfont icon-dianyingpiao"></i><span>电影票</span></a></li>
-                    <li><a href="#"><i class="iconfont icon-licai"></i><span>理财</span></a></li>
+                    <li><a href="#"><i class="iconfont icon-dianying"></i><span>电影票</span></a></li>
+                    <li><a href="#"><i class="iconfont icon-licai-copy"></i><span>理财</span></a></li>
                     <li><a href="#"><i class="iconfont icon-bijia"></i><span>购物比价</span></a></li>
                     <li><a href="#"><i class="iconfont icon-xinyongqiahuankuan"></i><span>还信用卡</span></a></li>
                     <li><a href="#"><i class="iconfont icon-jiudian"></i><span>酒店</span></a></li> 
                     <li><a href="#"><i class="iconfont icon-jiayou"></i><span>加油卡</span></a></li> 
                 </ul>
                 <!--工具end-->
-                
+                 <!--adv-->
+                <div id="adv">
+                    <?php if ($adv['code']) {?>
+                        <?=$adv['code'];?>
+                    <?php }else{ ?>
+                    <a href="<?=$adv['url']?>" title="<?=$adv['title']?>" target="_blank">
+                        <img src="<?=base_url();?>static/image/adv/300-100/<?=$adv['img']?>" width=300 height=100>
+                    </a>
+                    <?php } ?>
+                </div>
+                <!--adv end-->
             </aside>
             <!--侧边栏end-->
     </div>
