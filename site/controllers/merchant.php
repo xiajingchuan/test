@@ -24,4 +24,27 @@ class Merchant extends MY_Controller {
         $this->load->view('common/footer.html');
     }
 
+    /**
+     * 全部商家列表
+     */
+    public function lista() {
+        $this->load->model('merchant_model');
+        $category = $this->merchant_model->getMerchantCategory();
+
+        $mer_array = array();
+        foreach($category as $c) {
+            $mer = $this->merchant_model->getMerchantByCategory($c->id);
+            $mer_array[] = array(
+                'category_name' => $c->name,
+                'merchant' => $mer
+                );
+        }
+        print_r($mer_array);
+        exit;
+
+        $this->load->view('common/header.html');
+        $this->load->view('merchant/list.html');
+        $this->load->view('common/footer.html');
+    }
+
 }
