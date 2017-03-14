@@ -27,7 +27,7 @@ class Merchant extends MY_Controller {
     /**
      * 全部商家列表
      */
-    public function lista() {
+    public function alist() {
         $this->load->model('merchant_model');
         $category = $this->merchant_model->getMerchantCategory();
 
@@ -39,11 +39,11 @@ class Merchant extends MY_Controller {
                 'merchant' => $mer
                 );
         }
-        print_r($mer_array);
-        exit;
-
+        //print_r($mer_array);
+        //exit;
+        $datas['list'] = $mer_array;
         $this->load->view('common/header.html');
-        $this->load->view('merchant/list.html');
+        $this->load->view('merchant/alist.html', $datas);
         $this->load->view('common/footer.html');
     }
 
